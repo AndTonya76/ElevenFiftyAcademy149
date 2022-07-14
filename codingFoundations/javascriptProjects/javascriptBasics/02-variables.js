@@ -47,6 +47,29 @@ let NiceGreeting ="Oh! Hey there!"; //PascalCasing
 
 let nice_Greeting = "Hey y'all!"; //snakeCasing
 
-let $niceGreeting ="What up tho!?";
+let $niceGreeting ="What up tho!?";// 
 
 console.log(NiceGreeting); //OUTPUT: Oh! Hey there!
+
+
+
+
+
+
+
+//New variable information 07/11/2022
+var myFirstVariable;
+
+
+// Var and Hoisting
+programmer = "Ada Lovelace";
+var programmer;
+
+// Let and Hoisting
+jsVersion = "es6";
+let jsVersion;
+
+// Const and Re-Initialization
+const humansBestFriend = "dog";
+humansBestFriend = "frog";
+

@@ -1,0 +1,31 @@
+//ARROW FUNCTIONS are not hoisted - intended to fix the problem where we need to access a property of this inside a callback.  New Version of JavaScript ES6 aka "Fat Arrow Function"
+
+/*"concise" body (no curly braces... whatever is after "fat arrow" is automatically returned/ executed)
+
+"block" body (include curly braces and explicityly need to "return" any data)
+*/
+//CONCISE BODY automatically execute example:
+
+let speak = (noise) => console.log (`${noise}! ${noise}!`)
+speak("Bark")// Output: Bark! Bark!
+
+// - automatically return data after "fat arrow"
+let showFullName = (first, last) => `${first} ${last}`
+
+console.log(`Dude giving the lecture's name is ${showFullName("TJ", "Hindman")}`)// output: Dude giving the lecture's name is TJ Hindman
+
+BLOCK BODY
+//INCLUDE EXTRA FUNCTIONALITY (multiple line of code) BEORE SPECIFYING A "RETURN" VALUE
+let speakAgain = (noise) => {
+    let time = "later"
+
+console.log(`${noise} ${time}! ${noise} ${time}!`)
+}
+speakAgain("Meow")
+let showThisName = (first, last) => {
+    `${first} ${last}`
+}
+showThisName("Tonya", "Anderson")
+console.log(`Her name is ${showThisName("Tonya", "Anderson")}`)
+/*Output: Meow later! Meow later!
+Her name is undefined*/

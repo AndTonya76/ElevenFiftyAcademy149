@@ -12,13 +12,28 @@
     }
 */
 
-let name = {
-    firstName: "Tonya",
-    lastName: "Anderson"
-    firstNameLetters: 5
+let Name= {
+firstName: "Tonya",
+lastName: "Anderson", 
+firstNameLetters: 5
+lastNameLetters: 8,
 }
 
-console.log(name);// OUTPUT: the object in it's entirety. {firstName: "Tonya"lastName: "Anderson"firstNameLetters: 5}
+
+let Tonya = {
+    firstName: "Tonya",
+    lastName: "Anderson", 
+    Age: 46,
+    Title: "Administrative Assistant"
+}
+
+console.log(Tonya); //
+console.log(Tonya.Name); //
+console.log(Tonya.Age); //
+console.log(Tonya.middleName); //undefined: middleName does not exist. This value was never provided.
+
+
+console.log(Name);// OUTPUT: the object in it's entirety. {firstName: "Tonya"lastName: "Anderson"firstNameLetters: 5}
 
 let netflix = {
     name: "Avatar the Last Airbender",
